@@ -1,7 +1,7 @@
 let Vitorias = "90"
 let Derrotas = "30"
 
-switch (vitorias){
+switch (Vitorias){
 
   case "Ferro":
     console.log("Se vitórias for menor do que 10 = Ferro");
@@ -24,13 +24,14 @@ switch (vitorias){
   case "Imortal":
     console.log("Se vitórias for maior ou igual a 101 = Imortal");
     break;
-
+ default:
+      console.log("O Herói tem saldo de vitórias 60 está no nível de Ouro");
 }
 
-function subtraçao(numero1, numero2) {
-    return numero1 - numero2;
+function diminuir(Vitorias, Derrotas) {
+    return Vitorias - Derrotas;
   }
   
-  let resultado = subtraçao(90, 30); 
+  let resultado = diminuir(90, 30); 
   console.log("A subtração é: " + resultado); 
   
